@@ -1,0 +1,123 @@
+ /* Rest on body element */
+body{
+  font-family: "Century Ghotic", verdana, sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+ /* Reset on unordered list */
+nav > ul{
+  margin: 0px;
+  padding: 0px;
+}
+
+ /* Removing the default underlining*/
+nav a{
+  text-decoration: none;
+  display: inline-block;
+}
+ /* Setting width and backgground color  */
+nav{
+  width: 100%;
+  background-color: #424558;
+}
+
+ /* Setting paddind and color for link element*/
+nav > ul > li > a{
+  padding: 20px 30px;
+  color: #FFF;
+}
+ /* Avoiding that  the menu text to move when it's hovered */
+nav > ul > li:hover a{
+  padding: 15px 30px 20px 30px;
+}
+/* Removing all bullet on liste element*/
+nav li{
+  list-style-type: none;
+}
+
+ /* Clearfix for avoiding CSS to collapse the ul element */
+nav > ul::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
+ /* Making the li element to float on left and set et position relative */
+nav > ul > li{
+  float: left;
+  position: relative;
+}
+
+ /* Hide all submenu*/
+.submenu{
+  display: none;
+}
+
+ /* Setting the submenu to be appear when a menu is hovered */
+nav li:hover .submenu{
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 1000;
+}
+ /* border-bottom */
+.submenu li{
+  border-bottom: 1px solid #CCC;
+}
+
+ /* Setting the submenu */
+.submenu li a{
+  padding: 15px 30px;
+  color: #555;
+  font-size: 13px;
+  width: 270px;
+}
+ /* Style for menu */
+.menu-html:hover{
+  border-top: 5px solid #e44d26;
+  background-color: RGBa(228, 77, 38, 0.15);
+}
+
+.menu-css:hover{
+  border-top: 5px solid #0070bb;
+  background-color: RGBa(000, 112, 192, 0.15);
+}
+
+.menu-js:hover{
+  border-top: 5px solid #f1dc4f;
+  background-color: RGBa(220,212, 95, 0.15);
+}
+
+.menu-con:hover{
+  border-top: 5px solid #ee22df;
+  background-color: RGBa(220,45, 192, 0.15);
+}
+
+ /* Style for submenu */
+.menu-html .submenu{
+  background-color: RGB(220, 100, 28);
+}
+
+.menu-css .submenu{
+  background-color: RGB(000, 160, 240);
+}
+
+.menu-js .submenu{
+  background-color: RGB(250, 215, 100);
+}
+
+/* Changing the font-weight of <li> element when they're hovered and setting they background-color */
+
+.menu-html .submenu li:hover{
+  background-color: RGB(210, 77, 60);
+}
+
+.menu-css .submenu li:hover{
+  background-color: RGB(000, 115, 200);
+}
+
+.menu-js .submenu li:hover{
+  background-color: RGB(200, 165, 75);
+}
